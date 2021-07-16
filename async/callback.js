@@ -61,6 +61,8 @@ class UserStorage {
     }
 }
 
+// 콜백함수 안에서 다른것을 호출하고 또 전달하고 전달하고 또 전달하면 콜백지옥이다.
+// 가독성이 떨어진다. 로직을 한눈에 알아보기 힘들다. 유지보수하기힘들다. 콜백을계속불러오는것은 좋지않다.
 const userStorage = new UserStorage();
 const id = prompt('enter your id');
 const password = prompt('enter your password');
