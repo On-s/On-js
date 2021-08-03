@@ -3,3 +3,13 @@
   "presets" : ["@babel/env"]
 }
 
+// npm init -y package.json setting
+// npm i -D @babel/cli @babel/core @babel/node @babel/preser-env
+// npx 명령어는 컴퓨터 전역에 설치한 파일이 아닌 현재기준 내부에 설치된 임시 실행명령어이다.
+// npx babel 원본폴더 -d 저장폴더 --presets @babel/env -w
+
+// 바로위 코드 수정하기위해 .babelre파일에 {"presets" : ["@babel/env"]}
+// package.json 파일에 실행명령어를 scripts 내부에 작성
+// "jsbuild" : "babel 원본폴더 -d 저장폴더 -w"
+
+// node_modules 폴더는 gitignore 시키기  
