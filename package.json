@@ -1,6 +1,26 @@
 {
+  "name": "node_set",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "node test.js",
+    "server": "browser-sync start --server --watch --files \"**/*.*\" ",
+    "serverend": ""
+  },
+  "babel" : {
+    "presets" : ["@babel/env"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "7.14.8",
+    "@babel/core": "7.14.8",
+    "@babel/node": "7.14.9"
+  },
   "dependencies": {
-    "pakage.json": "^1.0.0"
+    "@babel/preset-env": "^7.14.9"
   },
   "type": "module"
 }
